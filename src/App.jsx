@@ -53,8 +53,8 @@ export default function App() {
             </h2>
             <p className="text-lg text-gray-700 text-center">
               Every moment with you feels like a dream I never want to wake up from, mon amour. Your smile lights up my entire world, and your laugh is my favorite sound.
-              <br /><br />
-              You make ordinary days feel extraordinary, and I’m so grateful to have you in my life. You’re not just amazing — you’re my kind of amazing.
+              <br />
+              You make ordinary days feel extraordinary, and I’m so grateful to have you in my life. You’re not just amazing - you’re my kind of amazing.
             </p>
             <div className="flex gap-4">
               <Button variant="secondary" onClick={() => setPage(pages.praise)}>Back</Button>
@@ -71,6 +71,7 @@ export default function App() {
             </h2>
             <p className="text-lg text-gray-700 text-center">
             Even though I won’t get to spend this Valentine’s Day with you right beside me, you’re still the reason it feels special. You have a way of making everything brighter just by being you.
+            <br />
             So… will you be my Valentine? 🥺
             </p>
             <div className="flex gap-4">
@@ -83,16 +84,18 @@ export default function App() {
         {page === pages.no && (
           <Page key="no">
             <span className="text-[4.5rem]">😝</span>
-            <h2 className="text-3xl text-pink-500 text-center">
-              Be Serious
+            <h2 className="text-4xl text-pink-500 text-center">
+              Stop Playing!
             </h2>
-            <p className="text-xl font-semibold text-red-500">Stop Playing</p>
+            <p className="text-lg text-gray-700 text-center">
+            You really thought "No" was an option, crazy? 😄
+            </p>
             <img
-              src="https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif"
+              src="https://media.giphy.com/media/3o7TKwmnDgQb5jemjK/giphy.gif"
               alt="Funny gif"
               className="rounded-xl shadow-lg"
             />
-            <Button onClick={() => setPage(pages.yes)}>Okay fine</Button>
+            <Button onClick={() => setPage(pages.yes)}>Okay fine, Yes! 🌻</Button>
           </Page>
         )}
 
@@ -127,7 +130,7 @@ function Page({ children }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -40 }}
       transition={{ duration: 0.45 }}
-      className="relative z-10 bg-white/90 rounded-3xl shadow-xl max-w-md w-full p-8 flex flex-col items-center gap-6"
+      className="relative z-10 bg-white/90 rounded-3xl shadow-xl max-w-md w-full p-8 pt-2 flex flex-col items-center gap-4"
     >
       {children}
     </motion.div>
