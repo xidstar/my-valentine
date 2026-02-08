@@ -106,7 +106,7 @@ export default function App() {
             >
               Yay!!!
             </motion.h1>
-            <p className="text-xl text-gray-700 text-center">Happy Valentine’s Day Baby!!!</p>
+            <p className="text-xl text-gray-700 text-center">Happy Valentine’s Day Baby!!! <br /> Je t'aime tellement 😘</p>
             <img
               src="https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif"
               alt="Celebration gif"
