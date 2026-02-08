@@ -83,7 +83,7 @@ export default function App() {
 
         {page === pages.no && (
           <Page key="no">
-            <span className="text-[4.5rem]">😝</span>
+            <span className="text-[4.5rem]">😤</span>
             <h2 className="text-4xl text-pink-500 text-center">
               Stop Playing!
             </h2>
